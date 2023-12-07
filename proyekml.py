@@ -46,11 +46,13 @@ st.altair_chart(chart, use_container_width=True)
 #input nilai dari variable independent
 weight = st.number_input("Weight ", 0, 200)
 height = st.number_input("`Height` ", 0, 500)
-age = st.number_input("Age ", 0, 150)
+# age = st.number_input("Age ", 0, 150)
 
 if st.button('Prediksi'):
     # Membuat array numpy dari nilai yang dimasukkan
-    input_data = np.array([[weight, height, age]])
+    # input_data = np.array([[weight, height, age]])
+    input_data = np.array([[weight, height]])
+
 
     # Melakukan prediksi menggunakan model Decision Tree
     predicted_size = model.predict(input_data)
