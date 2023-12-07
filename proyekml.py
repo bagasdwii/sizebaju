@@ -21,19 +21,15 @@ st.dataframe(df1)
 st.write("Grafik Weight")
 chart_weight = pd.DataFrame(df1, columns=["weight"])
 st.line_chart(chart_weight)
-st.write("Grafik Weight")
-chart_weight = pd.DataFrame(df1, columns=["weight"])
-st.bar_chart(chart_weight)
-st.write("Grafik Weight")
-chart_weight = pd.DataFrame(df1, columns=["weight"])
-st.bar_chart(chart_weight)
+
+st.write("Grafik Height")
+chart_height = pd.DataFrame(df1, columns=["height"])
+st.line_chart(chart_height)
 
 st.write("Grafik Age")
 chart_age = pd.DataFrame(df1, columns=["age"])
 st.line_chart(chart_age)
-st.write("Grafik Age")
-chart_age = pd.DataFrame(df1, columns=["age"])
-st.bar_chart(chart_age)
+
 
 
 
